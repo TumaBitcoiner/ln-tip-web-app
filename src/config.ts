@@ -1,5 +1,7 @@
+import profilePath from './assets/profile.JPG';
+
 export const config = {
   name: "Tuma",
-  profileImage: "./src/assets/profile.jpg",
+  profileImage: profilePath,
   lightningAddress: "tuma@minibits.cash"
 };
