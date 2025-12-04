@@ -31,8 +31,8 @@ export function TipForm({ onCreateInvoice, loading = false, error }: TipFormProp
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
             placeholder="1000"
-            min="0"
-            step="100"
+            min="1"
+            step="1"
             required
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all"
           />
