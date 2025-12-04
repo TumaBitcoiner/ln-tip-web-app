@@ -7,4 +7,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  base: '/ln-tip-web-app/', // Set the base path for GitHub Pages
 });
