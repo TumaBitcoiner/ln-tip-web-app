@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Zap } from 'lucide-react';
 
 interface TipFormProps {
   onCreateInvoice: (amount: number, message: string) => Promise<void>;
@@ -32,11 +31,11 @@ export function TipForm({ onCreateInvoice, loading = false, error }: TipFormProp
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
             placeholder="1000"
-            min="1"
+            min="0"
+            step="100"
             required
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all"
           />
-          <Zap className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-orange-500" />
         </div>
       </div>
 
